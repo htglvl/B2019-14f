@@ -4,7 +4,7 @@ using System.Collections.Generic;
 
 public class enemymove : MonoBehaviour
 {
-    public float speed, distance, wallreturn, dazetime, grounded;
+    public float speed, distance, wallreturn, dazetime, grounded, tocDo = 400;
     public bool movingright = false, daze = false;
     public Transform grounddetection, walldetection;
     public LayerMask whatiswall, whatisground, groundLayer;
@@ -31,10 +31,11 @@ public class enemymove : MonoBehaviour
         {
             speed = 0;
             pri_dazetime -= Time.deltaTime;
+            Debug.Log("daze");
         }
         if (pri_dazetime <= 0)
         {
-            speed = 400;
+            speed = tocDo;
             pri_dazetime = dazetime;
             daze = false;
             idleOrWalk = 1;

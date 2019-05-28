@@ -1413,6 +1413,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 212591569890341854, guid: 5bb5e607c87bd8a4784446cfc44cdeae,
+        type: 3}
+      propertyPath: m_Color.a
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4428556847348334, guid: 5bb5e607c87bd8a4784446cfc44cdeae, type: 3}
       propertyPath: m_LocalPosition.x
       value: 10.669877
@@ -1448,11 +1453,21 @@ PrefabInstance:
     - target: {fileID: 212037984367732402, guid: 5bb5e607c87bd8a4784446cfc44cdeae,
         type: 3}
       propertyPath: m_Color.a
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 212591569890341854, guid: 5bb5e607c87bd8a4784446cfc44cdeae,
+    - target: {fileID: 212037984367732402, guid: 5bb5e607c87bd8a4784446cfc44cdeae,
         type: 3}
-      propertyPath: m_Color.a
+      propertyPath: m_Color.r
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 212037984367732402, guid: 5bb5e607c87bd8a4784446cfc44cdeae,
+        type: 3}
+      propertyPath: m_Color.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 212037984367732402, guid: 5bb5e607c87bd8a4784446cfc44cdeae,
+        type: 3}
+      propertyPath: m_Color.b
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 114350708143709190, guid: 5bb5e607c87bd8a4784446cfc44cdeae,
@@ -1468,6 +1483,16 @@ PrefabInstance:
     - target: {fileID: 114350708143709190, guid: 5bb5e607c87bd8a4784446cfc44cdeae,
         type: 3}
       propertyPath: TgDoiPhatDauTien
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 114950078285635404, guid: 5bb5e607c87bd8a4784446cfc44cdeae,
+        type: 3}
+      propertyPath: dazetime
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 114950078285635404, guid: 5bb5e607c87bd8a4784446cfc44cdeae,
+        type: 3}
+      propertyPath: WaitFlipTime
       value: 0.5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -2043,7 +2068,7 @@ PrefabInstance:
     - target: {fileID: 114884133479875492, guid: feaf934ae82932542920b99d387f0664,
         type: 3}
       propertyPath: damage
-      value: 33
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: feaf934ae82932542920b99d387f0664, type: 3}
@@ -2879,6 +2904,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   amaze: {fileID: 1213333682}
   Overwatch: {fileID: 370538373}
+  amazeTrans: 0
+  OverwatchTrans: 0
+  FirstShootDelay: 0
+  DazeTimeDelay: 0
 --- !u!1 &944102966
 GameObject:
   m_ObjectHideFlags: 0
@@ -4393,6 +4422,11 @@ PrefabInstance:
     - target: {fileID: 114826776429224692, guid: fcbd584d80f1002439a82a615f40532c,
         type: 3}
       propertyPath: loottable.Array.data[5].dropRarity
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114826776429224692, guid: fcbd584d80f1002439a82a615f40532c,
+        type: 3}
+      propertyPath: loottable.Array.data[1].dropRarity
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
