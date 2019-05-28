@@ -1,0 +1,245 @@
+fileFormatVersion: 2
+guid: 87a2e4938efc7194c96709c78504f062
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: light_0
+    21300002: light_1
+    21300004: light_2
+    21300006: light_3
+    21300008: light_4
+    21300010: light_5
+    21300012: light_6
+    21300014: light_7
+    21300016: light_8
+    21300018: light_9
+    21300020: light_10
+    21300022: light_11
+    21300024: light_12
+    21300026: light_13
+    21300028: light_14
+    21300030: light_15
+    21300032: light_16
+    21300034: light_17
+    21300036: light_18
+    21300038: light_19
+    21300040: light_20
+    21300042: light_21
+    21300044: light_22
+    21300046: light_23
+    21300048: light_24
+    21300050: light_25
+    21300052: light_26
+    21300054: light_27
+    21300056: light_28
+    21300058: light_29
+    21300060: light_30
+    21300062: light_31
+    21300064: light_32
+    21300066: light_33
+    21300068: light_34
+    21300070: light_35
+    21300072: light_36
+    21300074: light_37
+    21300076: light_38
+    21300078: light_39
+    21300080: light_40
+    21300082: light_41
+    21300084: light_42
+    21300086: light_43
+    21300088: light_44
+    21300090: light_45
+    21300092: light_46
+    21300094: light_47
+    21300096: light_48
+    21300098: light_49
+    21300100: light_50
+    21300102: light_51
+    21300104: light_52
+    21300106: light_53
+    21300108: light_54
+    21300110: light_55
+    21300112: light_56
+    21300114: light_57
+    21300116: light_58
+    21300118: light_59
+    21300120: light_60
+    21300122: light_61
+    21300124: light_62
+    21300126: light_63
+  externalObjects: {}
+  serializedVersion: 7
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - serializedVersion: 2
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: iPhone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: light_5
+      rect:
+        serializedVersion: 2
+        x: 1611
+        y: 368
+        width: 401
+        height: 1398
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 09a958f1c86d9cb469c6986791a5dc7a
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: light_9
+      rect:
+        serializedVersion: 2
+        x: 852
+        y: 967
+        width: 721
+        height: 688
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a70f1c9dfff9c744aa6f4d444f35b946
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: light_12
+      rect:
+        serializedVersion: 2
+        x: 125
+        y: 248
+        width: 746
+        height: 1304
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 99ef76d0b1d2b2f4eb4a1a9d1a3d65dc
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 44da187550e935b4b8ccce4c79d6c1d7
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

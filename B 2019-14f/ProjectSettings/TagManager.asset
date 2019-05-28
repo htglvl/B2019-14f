@@ -1,0 +1,52 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!78 &1
+TagManager:
+  serializedVersion: 2
+  tags:
+  - ground
+  - destroyable
+  - healing filter zone
+  - ScreenShake
+  - filter
+  - medkit
+  - enemy
+  - OneWayPlatform
+  - firearm
+  layers:
+  - Default
+  - TransparentFX
+  - Ignore Raycast
+  - 
+  - Water
+  - UI
+  - 
+  - 
+  - healing zone
+  - bedrock
+  - enemy
+  - player
+  - block
+  - background
+  - ladder
+  - bullet
+  - ladder last step
+  - items
+  - filter
+  - only collide to player
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  m_SortingLayers:
+  - name: Default
+    uniqueID: 0
+    locked: 0
