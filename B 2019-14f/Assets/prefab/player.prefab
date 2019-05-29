@@ -328,7 +328,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0a3de5e87acdaaa43a485a18e066454d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 800
+  speed: 500
   Jumpforce: 23
   jumptime: 0.2
   firerate: 0.17
@@ -595,7 +595,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   timebtwattack: 0.5
   attackrange: 0.63
-  damage: 15
+  damage: 20
   enemystun: 50
   attackpos: {fileID: 4275156739071956}
   whatisenemy:

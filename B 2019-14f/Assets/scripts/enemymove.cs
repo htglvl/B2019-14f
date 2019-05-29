@@ -21,7 +21,7 @@ public class enemymove : MonoBehaviour
         rb2D = GetComponent<Rigidbody2D>();
         pri_dazetime = dazetime;
         priWalkingTime = walkingTime;
-        idleOrWalk = Random.Range (0,2);
+        idleOrWalk = Random.Range(0, 2);
     }
 
     // Update is called once per frame
@@ -43,12 +43,13 @@ public class enemymove : MonoBehaviour
 
         if (idleOrWalk == 0)
         {
-            	rb2D.velocity = new Vector2(0,0);
-                pri_dazetime = waitIdleTime;
-                idleOrWalk = 2;
-        }else
+            rb2D.velocity = new Vector2(0, 0);
+            pri_dazetime = waitIdleTime;
+            idleOrWalk = 2;
+        }
+        else
         {
-            if (priWalkingTime >= 0 )
+            if (priWalkingTime >= 0)
             {
                 priWalkingTime -= Time.deltaTime;
                 rb2D.velocity = new Vector2(speed * Time.deltaTime * direction, rb2D.velocity.y);
@@ -59,51 +60,59 @@ public class enemymove : MonoBehaviour
                 Debug.DrawRay(transform.position, new Vector2(0, -grounded), Color.green);
                 RaycastHit2D wallInfo = Physics2D.Raycast(walldetection.position, Vector2.down, wallreturn, whatiswall);
                 RaycastHit2D groundcenter = Physics2D.Raycast(transform.position, Vector2.down, grounded, groundLayer);
-                if (groundInfo.collider == false || wallInfo.collider == true)
+                if (groundcenter.collider == true)
                 {
-                    if (movingright == true)
+                    if (groundInfo.collider == false || wallInfo.collider == true)
                     {
-                        direction = -1f;
-                        GetComponent<enemyshooting>().enemyfacingright = -1;
-                        Flip();
+                        if (movingright == true)
+                        {
+                            direction = -1f;
+                            GetComponent<enemyshooting>().enemyfacingright = -1;
+                            Flip();
+                        }
+                        else
+                        {
+                            direction = 1f;
+                            GetComponent<enemyshooting>().enemyfacingright = 1;
+                            Flip();
+                        }
                     }
-                    else
-                    {
-                        direction = 1f;
-                        GetComponent<enemyshooting>().enemyfacingright = 1;
-                        Flip();
-                    }
+                }else
+                {
+                    direction = 1f;
+                    GetComponent<enemyshooting>().enemyfacingright = 1;
                 }
             }
             else
             {
                 priWalkingTime = walkingTime;
                 idleOrWalk = 0;
-            }    
-        }           
+            }
+        }
     }
     private void Flip()
 
     {
-        if (Pri_waitFlipTime <= 0 )
+        if (Pri_waitFlipTime <= 0)
         {
             Pri_waitFlipTime = WaitFlipTime;
             movingright = !movingright;
             // Multiply the player's x local scale by -1.
             Vector3 theScale = transform.localScale;
             theScale.x *= -1;
-            transform.localScale = theScale;    
-        }else
+            transform.localScale = theScale;
+        }
+        else
         {
             Pri_waitFlipTime -= Time.time;
         }
         // Switch the way the player is labelled as facing.
-        
+
 
     }
     public void GetRandomSound()
     {
-            RandomStepSound = Random.Range(4, 8);
-            FindObjectOfType<audiomanager>().Play("step " + RandomStepSound);    
+        RandomStepSound = Random.Range(4, 8);
+        FindObjectOfType<audiomanager>().Play("step " + RandomStepSound);
     }
 }
