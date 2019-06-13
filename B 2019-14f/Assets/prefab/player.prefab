@@ -24,7 +24,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1273503572966988}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0, y: 0.5, z: 0}
+  m_LocalPosition: {x: 0, y: 0.626, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 4253175890663384}
@@ -111,6 +111,9 @@ GameObject:
   - component: {fileID: 61134105975386634}
   - component: {fileID: 61909628995499920}
   - component: {fileID: 58112162355424386}
+  - component: {fileID: 1861744114}
+  - component: {fileID: 235704688}
+  - component: {fileID: 3434986526617134956}
   m_Layer: 11
   m_Name: player
   m_TagString: Player
@@ -136,6 +139,7 @@ Transform:
   - {fileID: 4784542305820820}
   - {fileID: 4051925134905968}
   - {fileID: 4275156739071956}
+  - {fileID: 1534464108221473506}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -260,7 +264,7 @@ MonoBehaviour:
   healthBar: {fileID: 0}
   filterbar: {fileID: 0}
   Max_filter: 100
-  filterlossovertime: 3
+  filterlossovertime: 0
   filterhealovertime: 15
   HealthLossOverTimeByFilter: 5
   filter: 100
@@ -323,7 +327,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1498724879238236}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 0a3de5e87acdaaa43a485a18e066454d, type: 3}
   m_Name: 
@@ -342,7 +346,7 @@ MonoBehaviour:
   khoangCachDeBangNhau: -0.2
   autoJumpForce: 0
   horizontalmove: 0
-  jumping: 0
+  jumping: 1
   autoJump: 1
   feetpos: {fileID: 4558081043593144}
   headpos: {fileID: 4650024892023400}
@@ -351,7 +355,7 @@ MonoBehaviour:
   itemchecker: {fileID: 4051925134905968}
   whatisground:
     serializedVersion: 2
-    m_Bits: 86528
+    m_Bits: 70144
   whatisladder:
     serializedVersion: 2
     m_Bits: 81920
@@ -435,6 +439,109 @@ CircleCollider2D:
   m_Offset: {x: -0.03, y: -0.46}
   serializedVersion: 2
   m_Radius: 0.27
+--- !u!114 &1861744114
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1498724879238236}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 47e9b454e12aa884ab16eda426f13a67, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ChamThoiGian: 0.5
+  ThoiGianCham: 1.5
+  SoLanChamThoiGian: 3
+--- !u!114 &235704688
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1498724879238236}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9f344be554a2cae4c8b328e721b66b51, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Inputvertical: 0
+  m_whatisladder:
+    serializedVersion: 2
+    m_Bits: 16384
+  animator: {fileID: 95269865773342170}
+  firearm: {fileID: 95962334873643056}
+  CC2D: {fileID: 3434986526617134956}
+  joystick: {fileID: 0}
+  Runspeed: 100
+  distanceCheckLadder: 0
+--- !u!114 &3434986526617134956
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1498724879238236}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 84faeca326705724ab0ec2af50c691c3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_JumpForce: 400
+  jumptime: 0.31
+  m_CrouchSpeed: 0.36
+  climbspeed: 0.39
+  m_MovementSmoothing: 0.05
+  m_CrouchDisableCollider: {fileID: 61134105975386634}
+  m_AirControl: 1
+  autoJump: 1
+  m_WhatIsGround:
+    serializedVersion: 2
+    m_Bits: 70400
+  m_whatisladder:
+    serializedVersion: 2
+    m_Bits: 16384
+  m_GroundCheck: {fileID: 4558081043593144}
+  m_CeilingCheck: {fileID: 4650024892023400}
+  m_ItemCheck: {fileID: 4051925134905968}
+  m_FirePosition: {fileID: 4438712291462320}
+  jumping: 0
+  PMBCC: {fileID: 235704688}
+  autoJumpDistanceCheck: 0.5
+  distanceCheckLadder: 0
+  OnLandEvent:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 235704688}
+        m_MethodName: OnLanding
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+  OnCrouchEvent:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 235704688}
+        m_MethodName: OnCrouching
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_TypeName: CharacterController2D+BoolEvent, Assembly-CSharp, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
 --- !u!1 &1537061090181718
 GameObject:
   m_ObjectHideFlags: 0
@@ -661,4 +768,34 @@ Transform:
   m_Children: []
   m_Father: {fileID: 4253175890663384}
   m_RootOrder: 6
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &2316398826889526874
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1534464108221473506}
+  m_Layer: 11
+  m_Name: FinalFirePosition
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1534464108221473506
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2316398826889526874}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 4253175890663384}
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}

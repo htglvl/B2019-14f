@@ -383,7 +383,6 @@ GameObject:
   - component: {fileID: 114950078285635404}
   - component: {fileID: 114350708143709190}
   - component: {fileID: 50921338774749374}
-  - component: {fileID: 935441206}
   - component: {fileID: 7603934822015968667}
   m_Layer: 10
   m_Name: enemy
@@ -687,32 +686,6 @@ Rigidbody2D:
   m_SleepingMode: 0
   m_CollisionDetection: 0
   m_Constraints: 4
---- !u!114 &935441206
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1855922137199012}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 58e84881a65591e4e8bd5475bbb05057, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  amaze: {fileID: 212037984367732402}
-  Overwatch: {fileID: 212591569890341854}
-  up: {fileID: 0}
-  bottom: {fileID: 0}
-  health: {fileID: 0}
-  amazeTrans: 0
-  OverwatchTrans: 0
-  FirstShootDelay: 0
-  DazeTimeDelay: 0
-  fullHealth: 0
-  currentHealth: 0
-  uptrans: 0
-  bottomtrans: 0
-  red: 0
 --- !u!114 &7603934822015968667
 MonoBehaviour:
   m_ObjectHideFlags: 0

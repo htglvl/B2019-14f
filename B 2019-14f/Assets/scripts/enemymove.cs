@@ -31,7 +31,6 @@ public class enemymove : MonoBehaviour
         {
             speed = 0;
             pri_dazetime -= Time.deltaTime;
-            Debug.Log("daze");
         }
         if (pri_dazetime <= 0)
         {

@@ -7,11 +7,14 @@ public class pauseMenu : MonoBehaviour {
 
 	// Use this for initialization
 	public static bool gameispause = false; 
+	public float Timescale;
 	public GameObject PauseMenuUI;
 	public Animator anim;
 
 	// Update is called once per frame
+	
 	void Update () {
+		Timescale = Time.timeScale;
 		if (Input.GetKeyDown(KeyCode.Escape))
 		{
 			if ( gameispause )
@@ -29,7 +32,7 @@ public class pauseMenu : MonoBehaviour {
 	public void Resume () 
 	{ 
 		anim.SetBool("ispause", false);
-		Time.timeScale = 1f;
+		Time.timeScale = Timescale;
 		gameispause = false;
 	}
 	public void pausemenu ()

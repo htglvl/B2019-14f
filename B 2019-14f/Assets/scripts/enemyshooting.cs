@@ -12,6 +12,7 @@ public class enemyshooting : MonoBehaviour
     {
         Physics2D.queriesStartInColliders = true;
         Pri_thoiGianHetOverWatch = thoiGianHetOverWatch;
+        Pri_TgDoiPhatDauTien = TgDoiPhatDauTien;
     }
 
     void FixedUpdate()

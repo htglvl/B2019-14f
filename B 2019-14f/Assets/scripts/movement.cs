@@ -6,7 +6,7 @@ using System.Collections;
 public class movement : MonoBehaviour
 {
     private Rigidbody2D rb;
-    private float jumptimecounter, move,  nextfire = 0f,
+    private float jumptimecounter, move, nextfire = 0f,
      privatebulletleft, private_dashspeed_multiply = 1, checkceilingradius = 0.2f, checkgroundradius = 0.2f, m_CrouchSpeed = 1f;
     private bool m_FacingRight = true, grounded = false, crouch = false,
     isclimbing = false, m_wasCrouching = false;
@@ -98,12 +98,12 @@ public class movement : MonoBehaviour
         if (autoJump == true)
         {
             RaycastHit2D autoJumpUp = Physics2D.Raycast(headpos.position,
-            transform.right * move , autoJumpCheck ,autoJumpCheckLayerMask);
+            transform.right * move, autoJumpCheck, autoJumpCheckLayerMask);
             RaycastHit2D autoJumpDown = Physics2D.Raycast(itemchecker.position, transform.right * move,
             autoJumpCheck + khoangCachDeBangNhau, autoJumpCheckLayerMask);
             Debug.DrawLine(itemchecker.position, itemchecker.position + transform.right * (autoJumpCheck + khoangCachDeBangNhau) * move
             , Color.white);
-            Debug.DrawLine(headpos.position, headpos.position + transform.right * autoJumpCheck  * move, Color.white);
+            Debug.DrawLine(headpos.position, headpos.position + transform.right * autoJumpCheck * move, Color.white);
 
             if (autoJumpDown.collider != null && autoJumpUp.collider == null)
             {
@@ -113,7 +113,7 @@ public class movement : MonoBehaviour
                 animator.SetBool("isjumping", true);
             }
         }
-        
+
         //crouch
         if (Inputvertical == -1 && isclimbing == false)
         {
@@ -139,9 +139,9 @@ public class movement : MonoBehaviour
         {
             privatebulletleft--;
             nextfire = Time.time + firerate;
-            
+
             fire();
-            FindObjectOfType<audiomanager>().Play("usp sound");    
+            FindObjectOfType<audiomanager>().Play("usp sound");
             firearm.SetBool("isshooting", true);
             firearm.SetBool("isreloading", false);
         }
@@ -298,16 +298,16 @@ public class movement : MonoBehaviour
         }
         else
         {
-            leftbullet.GetComponent<bulletcontroller>().speed = 
+            leftbullet.GetComponent<bulletcontroller>().speed =
             leftbullet.GetComponent<bulletcontroller>().speedRaw + horizontalmove;
             Instantiate(leftbullet, firepos.position, Quaternion.identity);
         }
 
     }
-    
+
     public void GetRandomSound()
     {
-            RandomStepSound = Random.Range(4, 8);
-            FindObjectOfType<audiomanager>().Play("step " + RandomStepSound);    
+        RandomStepSound = Random.Range(4, 8);
+        FindObjectOfType<audiomanager>().Play("step " + RandomStepSound);
     }
 }

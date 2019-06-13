@@ -4,7 +4,7 @@
 Material:
   serializedVersion: 6
   m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_Name: StandardLightMaterialGradient
   m_Shader: {fileID: 4800000, guid: 0e834bebf3661fe44b788f5af448b9de, type: 3}
@@ -30,5 +30,5 @@ Material:
     - _UVYOffset: -0.5
     - _UVYScale: -15
     m_Colors:
-    - _Color: {r: 0.735849, g: 0.1492524, b: 0.16765544, a: 0.172}
+    - _Color: {r: 0.33088237, g: 0.66774863, b: 1, a: 0.172}
     - _TintColor: {r: 0.8050233, g: 0.9852941, b: 0.39121974, a: 1}

@@ -19,7 +19,7 @@ public class oneWayPlatform : MonoBehaviour {
 			
 			if (Vector2.Distance(transform.position, player.transform.position) < KhoangCachGiuaPlayerVaThang)
 			{
-				jooystick = player.GetComponent<movement>().Inputvertical;	
+				jooystick = player.GetComponent<PlayerMoveByCC>().Inputvertical;	
 				if (jooystick == -1 )
 				{
 					effector.rotationalOffset = 180f;
