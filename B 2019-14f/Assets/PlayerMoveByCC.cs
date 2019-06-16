@@ -1,21 +1,18 @@
 ﻿using UnityEngine;
-using UnityStandardAssets.CrossPlatformInput;
-using UnityEngine.UI;
-using System.Collections.Generic;
-using System.Collections;
+
 
 public class PlayerMoveByCC : MonoBehaviour
 {
     [HideInInspector] public float Inputvertical;
-    [SerializeField] private LayerMask m_whatisladder; 
+    [Range(0, 1)] [SerializeField] private float DZVertical;
+    [Range(0, 1)] [SerializeField] private float DZHorizontal;
     public Animator animator, firearm;
     public CharacterController2D CC2D;
     public Joystick joystick;
     //public Image slider;
-    float moveDirection, climbspeed;
+    float moveDirection, RandomStepSound;
     public float Runspeed = 100;
-    bool crouch = false, cursorDangOTren, Climb, isclimbing;
-    public float distanceCheckLadder = 0f;
+    bool crouch = false, cursorDangOTren;
 
     //Transform firepos, fireposcrouch, itemchecker, FinalFirePosition;
     // Start is called before the first frame update
@@ -35,20 +32,22 @@ public class PlayerMoveByCC : MonoBehaviour
     void Update()
     {
         //move
-        if (joystick.Horizontal > 0.4f || Input.GetAxisRaw("Horizontal") == 1)
+        if (joystick.Horizontal > DZHorizontal || Input.GetAxisRaw("Horizontal") == 1)
         {
             moveDirection = 1 * Runspeed;
+            GetRandomSound();
         }
-        else if (joystick.Horizontal < -0.4f || Input.GetAxisRaw("Horizontal") == -1)
+        else if (joystick.Horizontal < -DZHorizontal || Input.GetAxisRaw("Horizontal") == -1)
         {
             moveDirection = -1 * Runspeed;
+            GetRandomSound();
         }
         else
         {
             moveDirection = 0;
         }
         //jumping
-        if (joystick.Vertical > 0.4f || Input.GetAxisRaw("Vertical") == 1)
+        if (joystick.Vertical > DZVertical || Input.GetAxisRaw("Vertical") == 1)
         {
             crouch = false;
             cursorDangOTren = true;
@@ -58,7 +57,7 @@ public class PlayerMoveByCC : MonoBehaviour
                 animator.SetBool("isjumping", true);
             }
         }
-        else if (joystick.Vertical < -0.4f || Input.GetAxisRaw("Horizontal") == -1)
+        else if (joystick.Vertical < -DZVertical || Input.GetAxisRaw("Horizontal") == -1)
         {
             Inputvertical = -1;
             crouch = true;
@@ -71,6 +70,7 @@ public class PlayerMoveByCC : MonoBehaviour
         }
 
         animator.SetFloat("speed", Mathf.Abs(moveDirection));
+        //animator.SetFloat("climb", Mathf.Abs(Inputvertical));
 
     }
     public void OnLanding()
@@ -85,33 +85,29 @@ public class PlayerMoveByCC : MonoBehaviour
             animator.SetBool("isjumping", true);
         }
     }
+
+    public void OnClimbing(bool IsClimbing)
+    {
+
+        animator.SetBool("isclimbing", IsClimbing);
+    }
     public void OnCrouching(bool isCrouching)
     {
         animator.SetBool("iscrouching", isCrouching);
+        firearm.SetBool("iscrouching", isCrouching);
     }
     private void FixedUpdate()
     {
 
-        CC2D.Move(moveDirection * Time.fixedDeltaTime, crouch, Inputvertical, cursorDangOTren, Climb);
+        CC2D.Move(moveDirection * Time.fixedDeltaTime, crouch, Inputvertical, cursorDangOTren);
         if (Inputvertical == 1)
         {
             Inputvertical = 2;
         }
-
-        RaycastHit2D hitinfo = Physics2D.Raycast(transform.position, Vector2.up, distanceCheckLadder, m_whatisladder);
-
-        if (hitinfo.collider != null)
-        {
-            isclimbing = true;
-           // m_CrouchSpeed = CrouchSpeed;
-            //dua crouch speed vao day cho de dieu khien khi len thang
-        }
-        else
-        {
-            isclimbing = false;
-           // m_CrouchSpeed = 1;
-            //dua crouch speed vao day cho de dieu khien khi len thang
-        }
     }
-    
+    public void GetRandomSound()
+    {
+        RandomStepSound = Random.Range(4, 8);
+        FindObjectOfType<audiomanager>().Play("step " + RandomStepSound);
+    }
 }

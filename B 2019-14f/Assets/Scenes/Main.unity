@@ -2335,7 +2335,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4253175890663384, guid: feaf934ae82932542920b99d387f0664, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 5.842847
+      value: 8.86
       objectReference: {fileID: 0}
     - target: {fileID: 4253175890663384, guid: feaf934ae82932542920b99d387f0664, type: 3}
       propertyPath: m_LocalPosition.z
@@ -2397,7 +2397,13 @@ PrefabInstance:
       propertyPath: joystick
       value: 
       objectReference: {fileID: 1096180035}
-    m_RemovedComponents: []
+    - target: {fileID: 4740798001441205683, guid: feaf934ae82932542920b99d387f0664,
+        type: 3}
+      propertyPath: slider
+      value: 
+      objectReference: {fileID: 967164490}
+    m_RemovedComponents:
+    - {fileID: 114393534907820448, guid: feaf934ae82932542920b99d387f0664, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: feaf934ae82932542920b99d387f0664, type: 3}
 --- !u!1 &752130135
 GameObject:
@@ -4715,7 +4721,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1414203798}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: dc2749a550b6a104987c0accee1b5835, type: 3}
   m_Name: 
@@ -4876,10 +4882,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Ground 2
       objectReference: {fileID: 0}
-    - target: {fileID: 1453548870383062, guid: fcbd584d80f1002439a82a615f40532c, type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 4322167043547338, guid: fcbd584d80f1002439a82a615f40532c, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0.5
@@ -4929,21 +4931,6 @@ PrefabInstance:
       propertyPath: pointToDestroy
       value: 
       objectReference: {fileID: 154763302}
-    - target: {fileID: 114826776429224692, guid: fcbd584d80f1002439a82a615f40532c,
-        type: 3}
-      propertyPath: loottable.Array.data[0].dropRarity
-      value: 100
-      objectReference: {fileID: 0}
-    - target: {fileID: 114826776429224692, guid: fcbd584d80f1002439a82a615f40532c,
-        type: 3}
-      propertyPath: loottable.Array.data[3].dropRarity
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 114826776429224692, guid: fcbd584d80f1002439a82a615f40532c,
-        type: 3}
-      propertyPath: loottable.Array.data[1].dropRarity
-      value: 0
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fcbd584d80f1002439a82a615f40532c, type: 3}
 --- !u!1 &1506696049

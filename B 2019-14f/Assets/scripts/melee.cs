@@ -1,6 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 using UnityStandardAssets.CrossPlatformInput;
 
 public class melee : MonoBehaviour {
@@ -14,7 +12,7 @@ public class melee : MonoBehaviour {
 		{
 			if (CrossPlatformInputManager.GetButton("Fire2"))
 			{
-				firearm.SetTrigger("is melee");
+				firearm.SetBool("IsMelee", true);
 				Collider2D[] enemyToDamg = Physics2D.OverlapCircleAll(attackpos.position, attackrange, whatisenemy);
 				for (int i = 0; i < enemyToDamg.Length; i++)
 				{
@@ -23,8 +21,11 @@ public class melee : MonoBehaviour {
     				{
                     	enemyToDamg[i].GetComponent<enemymove>().daze = true;
                 	}
-				Pri_timebtwattack = timebtwattack;
+					Pri_timebtwattack = timebtwattack;
 				}	
+			}else
+			{
+				firearm.SetBool("IsMelee", false);
 			}	
 		}else
 		{

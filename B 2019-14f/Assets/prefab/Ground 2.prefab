@@ -51,13 +51,13 @@ MonoBehaviour:
     dropRarity: 0
   - name: 2
     item: {fileID: 2800000, guid: 4f03b5078649b7d47990f5de2e9ee1d8, type: 3}
-    dropRarity: 0
+    dropRarity: 100
   - name: 3
     item: {fileID: 2800000, guid: c1fe7902fc288134595fd2531c281298, type: 3}
     dropRarity: 0
   - name: 4
     item: {fileID: 2800000, guid: dc61671837ca36943a610490dd4f5789, type: 3}
-    dropRarity: 100
+    dropRarity: 0
   - name: 5
     item: {fileID: 2800000, guid: 154d9a79603566f4e932b9300a2e4c83, type: 3}
     dropRarity: 0
