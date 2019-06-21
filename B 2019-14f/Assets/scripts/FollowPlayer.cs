@@ -4,7 +4,6 @@ using System.Collections;
 public class FollowPlayer : MonoBehaviour {
 	
 	public Transform player;
-	public Transform dirtgenerationpoint;
 	private Vector2 velocity;
 	public Vector3 mincamerapos;
 	public Vector3 maxcamerapos;
@@ -21,7 +20,7 @@ public class FollowPlayer : MonoBehaviour {
 			if (bound)
 			{
 			transform.position = 
-			new Vector3(Mathf.Clamp(transform.position.x, mincamerapos.x, dirtgenerationpoint.position.x), 
+			new Vector3(transform.position.x, 
 						Mathf.Clamp(transform.position.y, mincamerapos.y, maxcamerapos.y),
 						Mathf.Clamp(transform.position.z, mincamerapos.z, maxcamerapos.z));
 			}	

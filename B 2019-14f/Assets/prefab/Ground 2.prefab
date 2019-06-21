@@ -51,7 +51,7 @@ MonoBehaviour:
     dropRarity: 0
   - name: 2
     item: {fileID: 2800000, guid: 4f03b5078649b7d47990f5de2e9ee1d8, type: 3}
-    dropRarity: 100
+    dropRarity: 0
   - name: 3
     item: {fileID: 2800000, guid: c1fe7902fc288134595fd2531c281298, type: 3}
     dropRarity: 0
@@ -64,6 +64,9 @@ MonoBehaviour:
   - name: 6
     item: {fileID: 2800000, guid: e8dc2a41dcc62b642b1ce80cab23d088, type: 3}
     dropRarity: 0
+  - name: 8
+    item: {fileID: 2800000, guid: 29e6e27c6f9cfdf46ab1735190a9e451, type: 3}
+    dropRarity: 100
   - name: Tutorial
     item: {fileID: 2800000, guid: 83f434e43884fe14e9bb7707e19c3265, type: 3}
     dropRarity: 0

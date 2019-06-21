@@ -4,16 +4,15 @@ using System.Collections.Generic;
 
 public class enemymove : MonoBehaviour
 {
-    public float speed, distance, wallreturn, dazetime, grounded, tocDo = 400;
+    public float speed, distance, wallreturn, dazetime, grounded, tocDo = 400, FallingTime;
     public bool movingright = false, daze = false;
     public Transform grounddetection, walldetection;
     public LayerMask whatiswall, whatisground, groundLayer;
     private Rigidbody2D rb2D;
-    public float direction = -1, pri_dazetime, idleOrWalk, waitIdleTime, walkingTime, priWalkingTime, WaitFlipTime,
-    RandomStepSound;
+    public float direction = -1, pri_dazetime, idleOrWalk, waitIdleTime, walkingTime, priWalkingTime, WaitFlipTime;
     public Animator leganim;
 
-    private float Pri_waitFlipTime;
+    private float Pri_waitFlipTime, Pri_FallingTime, RandomStepSound;
     // Use this for initialization
     void Start()
     {
@@ -21,6 +20,7 @@ public class enemymove : MonoBehaviour
         rb2D = GetComponent<Rigidbody2D>();
         pri_dazetime = dazetime;
         priWalkingTime = walkingTime;
+        Pri_FallingTime = FallingTime;
         idleOrWalk = Random.Range(0, 2);
     }
 
@@ -78,8 +78,15 @@ public class enemymove : MonoBehaviour
                     }
                 }else
                 {
-                    direction = 1f;
-                    GetComponent<enemyshooting>().enemyfacingright = 1;
+                    if (Pri_FallingTime >= FallingTime)
+                    {
+                        Destroy(this.gameObject, 0f);
+                    }else
+                    {
+                        direction = 1f;
+                        Pri_FallingTime += Time.deltaTime;
+                        GetComponent<enemyshooting>().enemyfacingright = 1;
+                    }
                 }
             }
             else

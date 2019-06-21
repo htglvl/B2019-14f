@@ -47,6 +47,48 @@ TextureImporter:
   - first:
       213: 7162229253220122018
     second: BrackeysTilesetTemplate_14
+  - first:
+      213: -8779293241295490946
+    second: BrackeysTilesetTemplate_15
+  - first:
+      213: 3527013778518254883
+    second: BrackeysTilesetTemplate_16
+  - first:
+      213: -3004257739132306388
+    second: BrackeysTilesetTemplate_17
+  - first:
+      213: -7200514623275537123
+    second: BrackeysTilesetTemplate_18
+  - first:
+      213: 4707141846376260719
+    second: BrackeysTilesetTemplate_19
+  - first:
+      213: 4782965954459327783
+    second: BrackeysTilesetTemplate_20
+  - first:
+      213: -9020159457479939716
+    second: BrackeysTilesetTemplate_21
+  - first:
+      213: 4610586764482481056
+    second: BrackeysTilesetTemplate_22
+  - first:
+      213: 385923133482004931
+    second: BrackeysTilesetTemplate_23
+  - first:
+      213: -6211898534913451407
+    second: BrackeysTilesetTemplate_24
+  - first:
+      213: 3913249472057287208
+    second: BrackeysTilesetTemplate_25
+  - first:
+      213: -8895146175700578779
+    second: BrackeysTilesetTemplate_26
+  - first:
+      213: 3858885117016076568
+    second: BrackeysTilesetTemplate_27
+  - first:
+      213: 8343337107509378011
+    second: BrackeysTilesetTemplate_28
   externalObjects: {}
   serializedVersion: 10
   mipmaps:
@@ -155,9 +197,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 828
-        width: 216
-        height: 216
+        y: 2530
+        width: 217
+        height: 218
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -165,7 +207,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 38409338c6f160c40b8521713f9e10e2
+      spriteID: 748c0077bdbcebc46a39934cf585fcc3
       internalID: -3361864119014318478
       vertices: []
       indices: 
@@ -176,9 +218,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 238
-        y: 828
-        width: 216
-        height: 216
+        y: 2530
+        width: 217
+        height: 218
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -186,7 +228,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: cf1f70a6701e5b64598d233de5e97299
+      spriteID: 3509d444b9868c4489e10e14ca7197b0
       internalID: 7575898477333245794
       vertices: []
       indices: 
@@ -196,10 +238,10 @@ TextureImporter:
       name: BrackeysTilesetTemplate_2
       rect:
         serializedVersion: 2
-        x: 484
-        y: 830
-        width: 216
-        height: 216
+        x: 483
+        y: 2532
+        width: 217
+        height: 217
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -207,7 +249,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 43ff0295c5cce9d4ba12fff6085fbc7c
+      spriteID: 4050b0505ca7bde4a9a11242db4a05c6
       internalID: -5134841109343169766
       vertices: []
       indices: 
@@ -217,10 +259,10 @@ TextureImporter:
       name: BrackeysTilesetTemplate_3
       rect:
         serializedVersion: 2
-        x: 755
-        y: 830
-        width: 216
-        height: 216
+        x: 754
+        y: 2532
+        width: 217
+        height: 217
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -228,7 +270,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 44621861d0201644dab8dd6d78cdd7f5
+      spriteID: 71899392f7a5a6d44828bea92844516c
       internalID: 985349845657978566
       vertices: []
       indices: 
@@ -239,9 +281,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 579
-        width: 216
-        height: 216
+        y: 2281
+        width: 217
+        height: 218
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -249,7 +291,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 183d9aeb00fdb004c80feb914a9a60cd
+      spriteID: 43a413221613c574f9ebfbc1c10e73b2
       internalID: -3572959910682358816
       vertices: []
       indices: 
@@ -260,9 +302,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 238
-        y: 579
-        width: 216
-        height: 216
+        y: 2281
+        width: 217
+        height: 218
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -270,7 +312,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 225653095e9840145b31c2f7281e1f8d
+      spriteID: f3bdf05838e399643b1607b5b6163e4d
       internalID: 5655266088485970547
       vertices: []
       indices: 
@@ -280,10 +322,10 @@ TextureImporter:
       name: BrackeysTilesetTemplate_6
       rect:
         serializedVersion: 2
-        x: 484
-        y: 579
-        width: 216
-        height: 216
+        x: 483
+        y: 2281
+        width: 217
+        height: 218
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -291,7 +333,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 53ff4a2d5c85f3f46aef4d451678e498
+      spriteID: 37576bd5083ea604d9c735d573f2bab1
       internalID: 9220536364090590301
       vertices: []
       indices: 
@@ -301,10 +343,10 @@ TextureImporter:
       name: BrackeysTilesetTemplate_7
       rect:
         serializedVersion: 2
-        x: 755
-        y: 579
-        width: 216
-        height: 216
+        x: 754
+        y: 2281
+        width: 217
+        height: 218
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -312,7 +354,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 492d342fbcf6b4c4f957cb5e4f47e894
+      spriteID: 8a1ccb3086b04594798688d5612fbb37
       internalID: -2762913991511570529
       vertices: []
       indices: 
@@ -323,9 +365,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 326
-        width: 216
-        height: 216
+        y: 2028
+        width: 217
+        height: 218
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -333,7 +375,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6f873f795bb60924da7ace0bc8a57b7c
+      spriteID: 00f68dbb3548d194c86e2857c3691c12
       internalID: -8730216789860997914
       vertices: []
       indices: 
@@ -344,9 +386,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 238
-        y: 326
-        width: 216
-        height: 216
+        y: 2028
+        width: 217
+        height: 218
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -354,7 +396,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3bb0d21b00bb98548a16a4375d042f03
+      spriteID: 29c18eb085fe1f94eabacd0e38e2f289
       internalID: 4688980216292360228
       vertices: []
       indices: 
@@ -364,10 +406,10 @@ TextureImporter:
       name: BrackeysTilesetTemplate_10
       rect:
         serializedVersion: 2
-        x: 484
-        y: 326
-        width: 216
-        height: 216
+        x: 483
+        y: 2028
+        width: 217
+        height: 218
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -375,7 +417,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4e0b4026ec5f5fa40ac3a1b960b9c49b
+      spriteID: 8ff0b65b8acd4b9459a88300f9499c31
       internalID: -5036110833799264509
       vertices: []
       indices: 
@@ -385,10 +427,10 @@ TextureImporter:
       name: BrackeysTilesetTemplate_11
       rect:
         serializedVersion: 2
-        x: 755
-        y: 326
-        width: 216
-        height: 216
+        x: 754
+        y: 2028
+        width: 217
+        height: 218
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -396,7 +438,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3125a0616d6c6b3459007f7785e8e6d3
+      spriteID: ea386f17970c525468f3ab35cf9dc5af
       internalID: -7346858089791080606
       vertices: []
       indices: 
@@ -407,9 +449,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 238
-        y: 78
-        width: 216
-        height: 216
+        y: 1780
+        width: 217
+        height: 219
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -417,7 +459,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 972201ade94b07c498be2cdf21667998
+      spriteID: e08f1b8753de0ee4c8fc2cc3589154ca
       internalID: 3022519033809329018
       vertices: []
       indices: 
@@ -427,10 +469,10 @@ TextureImporter:
       name: BrackeysTilesetTemplate_13
       rect:
         serializedVersion: 2
-        x: 484
-        y: 78
-        width: 216
-        height: 216
+        x: 483
+        y: 1780
+        width: 217
+        height: 219
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -438,7 +480,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 47c170c5f2f90f6468ca21952ec43cb0
+      spriteID: affa41d45f279764793427fc2ec2299f
       internalID: 4381132795063340520
       vertices: []
       indices: 
@@ -448,10 +490,10 @@ TextureImporter:
       name: BrackeysTilesetTemplate_14
       rect:
         serializedVersion: 2
-        x: 755
-        y: 78
-        width: 216
-        height: 216
+        x: 754
+        y: 1780
+        width: 217
+        height: 219
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -459,8 +501,218 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9cc6101f888c14746a5f26e3364b639a
+      spriteID: 8e5a952e2fa98d24fb425d3257ca50d9
       internalID: 7162229253220122018
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BrackeysTilesetTemplate_15
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1501
+        width: 217
+        height: 218
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 36960a95cb457c54d9b7ecc6ae26c272
+      internalID: -8779293241295490946
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BrackeysTilesetTemplate_16
+      rect:
+        serializedVersion: 2
+        x: 270
+        y: 1501
+        width: 218
+        height: 218
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 20d0e6e35dbe948428bcda29d63ea404
+      internalID: 3527013778518254883
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BrackeysTilesetTemplate_17
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1252
+        width: 217
+        height: 219
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bc7dd2639a43a5b4f82d79aa60d0c7a5
+      internalID: -3004257739132306388
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BrackeysTilesetTemplate_18
+      rect:
+        serializedVersion: 2
+        x: 754
+        y: 1252
+        width: 217
+        height: 219
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9515e19dac631c5409b13e2a764dba1f
+      internalID: -7200514623275537123
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BrackeysTilesetTemplate_19
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1000
+        width: 217
+        height: 217
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3a8b98e6db58d7e47b278fd9440d7cf6
+      internalID: 4707141846376260719
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BrackeysTilesetTemplate_20
+      rect:
+        serializedVersion: 2
+        x: 270
+        y: 1000
+        width: 218
+        height: 217
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9728aa2f79a3afc4c8c8beaba2ccec8e
+      internalID: 4782965954459327783
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BrackeysTilesetTemplate_21
+      rect:
+        serializedVersion: 2
+        x: 517
+        y: 1000
+        width: 217
+        height: 217
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dfb05cdd5c1754f4dace43829159dd82
+      internalID: -9020159457479939716
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BrackeysTilesetTemplate_22
+      rect:
+        serializedVersion: 2
+        x: 754
+        y: 1000
+        width: 217
+        height: 217
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6ec40064001233648aaf47c9561a8d7f
+      internalID: 4610586764482481056
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BrackeysTilesetTemplate_23
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 749
+        width: 217
+        height: 217
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: db641d89205a8234392ebd15636c9886
+      internalID: 385923133482004931
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BrackeysTilesetTemplate_24
+      rect:
+        serializedVersion: 2
+        x: 754
+        y: 750
+        width: 217
+        height: 219
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dfd7576f0a0d4194eb6d8c176f070009
+      internalID: -6211898534913451407
       vertices: []
       indices: 
       edges: []

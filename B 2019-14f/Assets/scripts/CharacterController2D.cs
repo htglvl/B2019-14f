@@ -1,6 +1,4 @@
 using UnityEngine;
-using UnityStandardAssets.CrossPlatformInput;
-using UnityEngine.UI;
 
 using UnityEngine.Events;
 public class CharacterController2D : MonoBehaviour
@@ -20,7 +18,7 @@ public class CharacterController2D : MonoBehaviour
     public PlayerFire PF;
     public float autoJumpDistanceCheck = 0.5f, distanceCheckLadder = 0f, HorizontalMove;
 
-    const float k_GroundedRadius = .25f; // Radius of the overlap circle to determine if grounded
+    const float k_GroundedRadius = .2f; // Radius of the overlap circle to determine if grounded
     const float k_CeilingRadius = .2f; // Radius of the overlap circle to determine if the player can stand up
     const float khoangCachDeBangNhau = -.2f;
     private bool m_Grounded;            // Whether or not the player is grounded.

@@ -107,7 +107,6 @@ GameObject:
   - component: {fileID: 114448463124679150}
   - component: {fileID: 114180092381183360}
   - component: {fileID: 114147898077874096}
-  - component: {fileID: 114393534907820448}
   - component: {fileID: 61134105975386634}
   - component: {fileID: 61909628995499920}
   - component: {fileID: 58112162355424386}
@@ -188,6 +187,7 @@ SpriteRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -321,57 +321,6 @@ MonoBehaviour:
   offset: {x: -0.5, y: 0}
   shadowmat: {fileID: 2100000, guid: c2eca7ad30976374595e9123b91d87c6, type: 2}
   shadowcolor: {r: 0, g: 0, b: 0, a: 0.57254905}
---- !u!114 &114393534907820448
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1498724879238236}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0a3de5e87acdaaa43a485a18e066454d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speed: 500
-  Jumpforce: 23
-  jumptime: 0.2
-  firerate: 0.17
-  reloadtime: 2.5
-  bulletleft: 15
-  climbspeed: 5
-  Inputvertical: 0
-  distance: 0
-  RandomStepSound: 0
-  autoJumpCheck: 0.5
-  khoangCachDeBangNhau: -0.2
-  autoJumpForce: 0
-  horizontalmove: 0
-  jumping: 1
-  autoJump: 1
-  feetpos: {fileID: 4558081043593144}
-  headpos: {fileID: 4650024892023400}
-  firepos: {fileID: 4438712291462320}
-  fireposcrouch: {fileID: 4784542305820820}
-  itemchecker: {fileID: 4051925134905968}
-  whatisground:
-    serializedVersion: 2
-    m_Bits: 70144
-  whatisladder:
-    serializedVersion: 2
-    m_Bits: 81920
-  autoJumpCheckLayerMask:
-    serializedVersion: 2
-    m_Bits: 4096
-  animator: {fileID: 95269865773342170}
-  firearm: {fileID: 95962334873643056}
-  leftbullet: {fileID: 1246927005133124, guid: 092ea6ab51b47f349ab744313a332822, type: 3}
-  rightbullet: {fileID: 1246927005133124, guid: 383964c2b219c7b40a26d99cbda2285a,
-    type: 3}
-  discollider: {fileID: 61134105975386634}
-  CrouchSpeed: 0.5
-  joystick: {fileID: 0}
-  slider: {fileID: 0}
 --- !u!61 &61134105975386634
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -498,7 +447,7 @@ MonoBehaviour:
   autoJump: 1
   m_WhatIsGround:
     serializedVersion: 2
-    m_Bits: 70400
+    m_Bits: 70144
   m_whatisladder:
     serializedVersion: 2
     m_Bits: 16384
@@ -691,6 +640,7 @@ SpriteRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -702,7 +652,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 5
+  m_SortingOrder: 3
   m_Sprite: {fileID: 21300000, guid: 972ed2e8cd6573f42bbf46e398abfd54, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
