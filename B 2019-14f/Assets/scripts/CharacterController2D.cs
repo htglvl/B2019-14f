@@ -1,5 +1,4 @@
 using UnityEngine;
-
 using UnityEngine.Events;
 public class CharacterController2D : MonoBehaviour
 {
@@ -69,7 +68,6 @@ public class CharacterController2D : MonoBehaviour
                 m_Grounded = true;
                 if (!wasGrounded)
                     OnLandEvent.Invoke();
-
             }
         }
     }
@@ -80,8 +78,6 @@ public class CharacterController2D : MonoBehaviour
         PF.fire(m_FacingRight, HorizontalMove, CrouchOutSide);
 
     }
-
-
     public void Move(float move, bool crouch, float jump, bool cursor)
     {
         HorizontalMove = move ; // dua bien move ra ngoai de vao dc ham fire
@@ -137,14 +133,18 @@ public class CharacterController2D : MonoBehaviour
             // If the input is moving the player right and the player is facing left...
             if (move > 0 && !m_FacingRight)
             {
+                //right
                 // ... flip the player.
                 Flip();
+                GetComponent<medkitscript>().directionleft = 1;
             }
             // Otherwise if the input is moving the player left and the player is facing right...
             else if (move < 0 && m_FacingRight)
             {
                 // ... flip the player.
                 Flip();
+                //left
+                GetComponent<medkitscript>().directionleft = -1;
             }
         }
         // If the player should jump...
@@ -224,8 +224,6 @@ public class CharacterController2D : MonoBehaviour
             //OnClimbEvent.Invoke(false);
         }
     }
-
-
     private void Flip()
     {
         // Switch the way the player is labelled as facing.

@@ -9,6 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1776599920}
+  - component: {fileID: 1776599921}
   m_Layer: 11
   m_Name: AstarTarget
   m_TagString: Untagged
@@ -30,6 +31,19 @@ Transform:
   m_Father: {fileID: 4253175890663384}
   m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1776599921
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1776599919}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d9b4d0c95ba32ac4bb63cc484b087905, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  yPos: 16
 --- !u!1 &1273503572966988
 GameObject:
   m_ObjectHideFlags: 0
@@ -296,7 +310,7 @@ MonoBehaviour:
   healthBar: {fileID: 0}
   filterbar: {fileID: 0}
   Max_filter: 100
-  filterlossovertime: 0
+  filterlossovertime: 3
   filterhealovertime: 15
   HealthLossOverTimeByFilter: 5
   filter: 100
@@ -317,10 +331,15 @@ MonoBehaviour:
   how_many_filter_heal: 25
   directionleft: 1
   chieudai: 1.83
+  Col2EnemyFrc: 600
+  collideDamg: 15
+  collideCooldown: 2
   whatIsItems:
     serializedVersion: 2
     m_Bits: 393216
   itemChecker: {fileID: 4051925134905968}
+  me: {fileID: 212467474693088166}
+  myArm: {fileID: 212954096460399132}
 --- !u!114 &114180092381183360
 MonoBehaviour:
   m_ObjectHideFlags: 0
