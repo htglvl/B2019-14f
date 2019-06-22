@@ -693,12 +693,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   timebtwattack: 0.5
   attackrange: 0.63
-  damage: 20
-  enemystun: 50
+  damage: 120
   attackpos: {fileID: 4275156739071956}
   whatisenemy:
     serializedVersion: 2
-    m_Bits: 5120
+    m_Bits: 1024
   firearm: {fileID: 95962334873643056}
 --- !u!1 &1761810065399604
 GameObject:

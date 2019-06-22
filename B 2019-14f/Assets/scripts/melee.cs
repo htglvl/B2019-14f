@@ -3,7 +3,7 @@ using UnityStandardAssets.CrossPlatformInput;
 
 public class melee : MonoBehaviour {
 	private float Pri_timebtwattack;
-	public float timebtwattack, attackrange, damage, enemystun;
+	public float timebtwattack, attackrange, damage;
 	public Transform attackpos;
 	public LayerMask whatisenemy;
 	public Animator firearm;
