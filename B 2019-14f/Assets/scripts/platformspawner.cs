@@ -29,6 +29,7 @@ public class platformspawner : MonoBehaviour {
 			{
 				transform.position = new Vector3(transform.position.x + platformWidth + distancebetween, transform.position.y, transform.position.z);
 				Instantiate (theplatform, transform.position, transform.rotation);
+
 			}
 			
 		}	

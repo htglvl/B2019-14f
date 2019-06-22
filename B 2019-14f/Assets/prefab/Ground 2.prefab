@@ -48,28 +48,28 @@ MonoBehaviour:
   loottable:
   - name: 1
     item: {fileID: 2800000, guid: 44fa756bb5cf1644c8ba9688deef7dca, type: 3}
-    dropRarity: 0
+    dropRarity: 50
   - name: 2
     item: {fileID: 2800000, guid: 4f03b5078649b7d47990f5de2e9ee1d8, type: 3}
-    dropRarity: 0
+    dropRarity: 50
   - name: 3
     item: {fileID: 2800000, guid: c1fe7902fc288134595fd2531c281298, type: 3}
-    dropRarity: 0
+    dropRarity: 50
   - name: 4
     item: {fileID: 2800000, guid: dc61671837ca36943a610490dd4f5789, type: 3}
-    dropRarity: 0
+    dropRarity: 50
   - name: 5
     item: {fileID: 2800000, guid: 154d9a79603566f4e932b9300a2e4c83, type: 3}
-    dropRarity: 0
+    dropRarity: 50
   - name: 6
     item: {fileID: 2800000, guid: e8dc2a41dcc62b642b1ce80cab23d088, type: 3}
-    dropRarity: 0
+    dropRarity: 50
   - name: 8
     item: {fileID: 2800000, guid: 29e6e27c6f9cfdf46ab1735190a9e451, type: 3}
-    dropRarity: 100
+    dropRarity: 50
   - name: Tutorial
     item: {fileID: 2800000, guid: 83f434e43884fe14e9bb7707e19c3265, type: 3}
-    dropRarity: 0
+    dropRarity: 50
   colorMappings:
   - color: {r: 0, g: 0, b: 0, a: 1}
     prefab: {fileID: 1610138442625090, guid: 007dac3c98c58a54d9e5e396af477620, type: 3}

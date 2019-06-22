@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Pathfinding;
 
 public class platformdestroy : MonoBehaviour {
 	public GameObject pointToDestroy;
@@ -19,7 +20,7 @@ public class platformdestroy : MonoBehaviour {
 				gameObject.SetActive(false);	
 			}else
 			{
-				Destroy(gameObject);	
+				Destroy(gameObject);
 			}
 			
 			
